@@ -57,18 +57,18 @@ class _HomePageState extends State<HomePage> {
       child: Row(
         children: [
           CachedNetworkImage(
-            height: 80,
-            width: 80,
+            height: 100,
+            width: 100,
             fit: BoxFit.cover,
             imageUrl: article.urlToImage.toString(),
             placeholder: (context, url) => Container(
-              height: 80,
-              width: 80,
+              height: 100,
+              width: 100,
               color: Colors.grey,
             ),
             errorWidget: (context, url, error) => Container(
-              height: 80,
-              width: 80,
+              height: 100,
+              width: 100,
               color: Colors.grey,
               child: const Icon(Icons.error),
             ),
